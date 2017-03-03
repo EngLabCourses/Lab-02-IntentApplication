@@ -35,10 +35,20 @@
         android:text="Open Cocktail Detail for Result" />
 
     <TextView
-        android:id="@+id/text_view_result"
-        android:layout_width="match_parent"
+        android:id="@+id/label_result"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:text="@string/label_error_description"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_view_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_result"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
 
 </RelativeLayout>

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">IntentApplication</string>
+    <string name="label_error_description">Descrizione Errore</string>
 </resources>

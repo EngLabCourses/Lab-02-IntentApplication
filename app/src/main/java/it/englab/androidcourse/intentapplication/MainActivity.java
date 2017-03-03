@@ -57,12 +57,14 @@ public class MainActivity extends AppCompatActivity {
 
         if (requestCode == REQUEST_CODE_DETAIL) {
             if (resultCode == RESULT_OK) {
+                findViewById(R.id.label_result).setVisibility(View.GONE);
                 findViewById(R.id.text_view_result).setVisibility(View.GONE);
             } else if (resultCode == RESULT_CANCELED) {
-                TextView textViewResult = (TextView) findViewById(R.id.text_view_result);
                 if (data != null) {
+                    TextView textViewResult = (TextView) findViewById(R.id.text_view_result);
                     textViewResult.setText(data.getStringExtra("ERR_DESCRIPTION"));
                     textViewResult.setVisibility(View.VISIBLE);
+                    findViewById(R.id.label_result).setVisibility(View.VISIBLE);
                 }
             }
         }
